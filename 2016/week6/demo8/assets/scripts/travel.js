@@ -6,21 +6,39 @@ function travelNotes() {
   function createNote() {
     //object for wrapper html for note
     var $note = $("<p>");
+    var $delete =$("<button>Hello</button>")
     //define input field
     var $note_text = $(".note-input input");
+    var $note_button = $(".note-output button");
     //conditional check for input field
     if ($note_text.val() !== "") {
     //set content for note
     $note.html($note_text.val());
+    $delete.html($note_button.val());
+
     //hide new note to setup fadeIn...
     $note.hide();
+    $delete.hide();
     //append note text to note-output
     $(".note-output").append($note);
+    $(".note-output").append($delete);
+
     //fadeIn hidden new note
     $note.fadeIn("slow");
+    $delete.fadeIn("slow");
+
     $note_text.val("");
     }
   }
+
+  function removeNote() {
+    $note.remove();
+  }
+
+  $(".note-output button").on("click", function(e){
+
+    removeNote();
+    });
 
   //handle user event for `add` button click
   $(".note-input button").on("click", function(e) {
