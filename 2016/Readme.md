@@ -3,5 +3,4 @@
 Weekly source code examples for 2016.
 
 #### Contents
-* Fall
-* Spring
+* fall
