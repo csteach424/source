@@ -7,7 +7,6 @@ A brief overview to working with Google APIs, OAuth 2.0, &c.
 * Common options
 * Setup
 * App access
-* 
 
 #### Intro
 Google's JS client library enables an app to interact with Google APIs, including Drive &c.
