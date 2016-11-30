@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="google-signin-client_id" content="ADD_YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <title>OAuth 2.0 test - Google - signin and profile</title>
+    <!-- css styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- load google platform library -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- js scripts -->
+    <script type="text/javascript" src="test-oauth.js"></script>
+  </head>
+  <body>
+    <section>
+      <!-- add initial sign in/out button -->
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      <p>
+        <!-- explicit app only google sign out -->
+        <a href="#" onclick="signOut();">Sign out</a>
+      </p>
+    </section>
+  </body>
+</html>
