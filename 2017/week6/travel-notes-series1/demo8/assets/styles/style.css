@@ -1,0 +1,48 @@
+body {
+  width: 850px;
+  margin: auto;
+  background: #fff;
+  font-size: 15px;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+h3 {
+  font-size: 1.75em;
+}
+h5 {
+  font-size: 1.25em;
+  margin: 10px 0 10px 0;
+}
+header {
+  border-bottom: 1px solid #dedede;
+}
+header p {
+  font-size: 1.25em;
+  font-style: italic;
+}
+main {
+  overflow: auto;
+  padding: 15px 0 15px 0;
+}
+.note-input input {
+  width: 40%;
+}
+.note-input button {
+  padding: 2px;
+  margin-left: 5px;
+  border-radius: 0;
+  border: 1px solid #dedede;
+  cursor: pointer;
+}
+.note-output p:nth-child(even) {
+  background-color: #ccc;
+}
+.note-output p:nth-child(odd) {
+  background-color: #eee;
+}
+footer {
+  margin-top: 5px;
+  border-top: 1px solid #dedede;
+}
+footer p {
+  font-size: 0.8em;
+}
