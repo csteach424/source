@@ -1,0 +1,15 @@
+/*
+* styles.css - general css styles
+*/
+
+table {
+  border-top: 1px solid #555;
+  border-left: 1px solid #555;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+}
