@@ -1,9 +1,7 @@
-### Source - Week 6
+### Source - Week 7
 
-Source code examples for week 6 of the COMP 424 course.
+Source code examples for week 7 of the COMP 424 course.
 
 #### Contents
-* javascript
-  * *private* variables
-  * object access with getters and setters
 * travel notes app - series 1
+* travel notes app - series 2

@@ -1,4 +1,4 @@
-### Week 9 - Source code examples - Travel Notes - Series 2
+### Week 7 - Source code examples - Travel Notes - Series 2
 
 The first series for the demo **Travel Notes** app includes *6* iterations of the application.
 
