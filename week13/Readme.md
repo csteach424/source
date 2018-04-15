@@ -4,4 +4,4 @@ Source code examples for week 13 of the COMP 424 course.
 
 #### Contents
 * Node.js examples with JSON
-* NOde.js example with Redis
+* Node.js example with Redis
