@@ -1,0 +1,12 @@
+/*
+* styles.css - general css styles
+*/
+
+ul {
+  list-style: circle inside;
+  font-size: 15px;
+}
+
+li {
+  color: #cd0603;
+}
