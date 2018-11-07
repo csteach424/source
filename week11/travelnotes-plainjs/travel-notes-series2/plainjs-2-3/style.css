@@ -1,0 +1,134 @@
+/*
+* style.css 
+* - basic stylesheet for plainjs travel notes
+*/
+
+/* GENERAL */
+body {
+  margin: 2%;
+  font-size: 14px;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+section {
+  /* margin: 1%;
+  padding: 2%; */
+}
+
+#wrapper {
+  display: grid;
+  grid-template-rows: auto calc(80vh);
+  grid-template-columns: 250px auto;
+  column-gap: 2%;
+  row-gap: 2%;
+  grid-template-areas:
+    'side header'
+    'side content'
+    'side footer';
+}
+
+#page-sidebar {
+  grid-area: side;
+  border: 1px solid #000;
+  /* padding: 1%; */
+}
+
+#page-header {
+  grid-area: header;
+  border: 1px solid #000;
+  /* padding: 1%; */
+}
+
+#page-content {
+	grid-area: content;
+  overflow: auto;
+}
+
+#page-footer {
+	grid-area: footer;
+	/* margin: 1%;
+	padding: 2%; */
+	border-top: 1px solid #000;
+}
+
+/* HEADINGS &c. */
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+	/* margin: 1% 0; */
+}
+
+.side-header {
+	margin: 5px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.page-banner {
+	margin: 5px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+/*
+* BUTTONS
+*/
+button {
+  margin: 0.75% 0.75% 0.75% 0;
+  padding: 0.75%;
+  border: 1px solid #000;
+	background-color: #fff; /* FF needs explicit bg-c */
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #dad87a;
+	color: #000;
+}
+
+.note-delete {
+	margin: 5px;
+	padding: 3px;
+	font-size: .75em;
+}
+
+/* .note-delete:hover, .delete-all:hover {
+	background-color: rgb(233, 81, 81);
+} */
+
+/*
+* FIELDS
+*/
+
+input {
+  margin: 0.75% 0.75% 0.75% 0;
+  padding: 0.75%;
+	width: 35%;
+  border: 1px solid #000;
+  font-size: 1em;
+}
+
+/*
+* APP CONTENT
+*/
+
+#app-controls {
+	display: none;
+}
+
+#note-output {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#note-output p {
+	margin: 1%;
+  padding: 1%;
+  border: 1px solid #dad87a;
+  flex: 1 25%;
+}
