@@ -1,8 +1,9 @@
-### Readme - Source - Week 10
+### Readme - Source - Week 12
 
-Source code examples for week 10 of the COMP 424 course.
+Source code examples for week 12 of the COMP 424 course.
 
 #### Contents
 * ajax-json
+* basic-autoscroll
 * generators
 * promises
