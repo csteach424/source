@@ -1,0 +1,22 @@
+/*
+* style.css - general CSS styles for test app
+*/
+
+
+body {
+  width: 900px;
+  color: #444;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 14px;
+}
+
+/* 'color' can be set to a named value, HEX value (e.g. #444) &c. */
+p {
+  color: blue;
+}
+
+/* custom style - fiction quote */
+p.fiction {
+  color: #fadb48;
+  font-size: 1.5rem;
+}
