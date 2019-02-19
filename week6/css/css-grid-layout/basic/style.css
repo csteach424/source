@@ -1,0 +1,41 @@
+/*
+* style.css
+* css grid layout demo stylesheet
+*/
+
+.box {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.wrapper {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(150px, auto);
+}
+
+.top {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+.left {
+  grid-column: 1;
+  grid-row: 2 / 4;
+}
+
+.center-top {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.center-bottom {
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+
+.bottom {
+  grid-column: 2 / 4;
+  grid-row: 4;
+}
