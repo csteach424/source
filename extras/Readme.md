@@ -1,3 +1,6 @@
-### Source - Week 9 - JavaScript
+### Source - Extras
 
-JavaScript source code examples for week 9 of the COMP 424 course.
+This directory includes extra source code examples developed for COMP 424.
+
+#### Contents
+* various extra examples
