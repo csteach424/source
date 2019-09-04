@@ -1,0 +1,47 @@
+/*
+* styles.css - general css styles
+*/
+
+ul {
+  list-style: circle inside;
+  font-size: 1.35em;
+}
+
+li {
+  color: #333;
+}
+
+/*
+* list as menu tabs - horizontal
+*/
+
+#menutabs {
+  margin: 0;
+  padding: 10px 0 20px 10px;
+  border-bottom: 1px solid #666;
+}
+
+#menutabs li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  list-style: none;
+}
+
+#menutabs a {
+  float: left;
+  line-height: 10px;
+  margin: 0 8px 4px 8px;
+  text-decoration: none;
+  color: #1a3852;
+}
+
+#menutabs a.active, #menutabs a:hover {
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+  color: #cd0603;
+}
+
+#menutabs a:hover {
+  color: #779eab;
+}
