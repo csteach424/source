@@ -1,0 +1,16 @@
+/*
+* style.css - general CSS styles for test app
+*/
+
+
+body {
+  width: 900px;
+  color: #444;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+/* 'color' can be set to a named value, HEX value (e.g. #444) &c. */
+p {
+  color: blue;
+  font-size: 14px;
+}
