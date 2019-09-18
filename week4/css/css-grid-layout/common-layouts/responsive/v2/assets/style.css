@@ -1,0 +1,110 @@
+/*
+* style.css
+* - grid layout - responsive design layout using grid css
+*/
+
+body {
+	/* font-family: Helvetica, Arial, sans-serif; */
+	font: 400 16px "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 0;
+	padding: 1vh;
+}
+
+a {
+	text-decoration: none;
+	color: #2D5E9E;
+}
+
+/* NAV menu */
+nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+/*
+* grid areas
+*/
+.wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: 120px 60px calc(98vh - 240) 60px;
+	grid-template-areas:
+		"site-header"
+		"site-nav"
+		"content"
+		"content-side"
+		"site-links"
+		"site-footer";
+	height: 98vh;
+}
+
+/* SITE */
+.site-header {
+	grid-area: site-header;
+	padding: 1%;
+	border: 1px solid #ccc;
+}
+
+.site-nav {
+	grid-area: site-nav;
+	border: 1px solid #ccc;
+}
+
+.site-links {
+	grid-area: site-links;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.site-footer {
+	grid-area: site-footer;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+/* CONTENT */
+.content {
+	overflow: auto;
+	grid-area: content;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.content-side {
+	grid-area: content-side;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.content-article {
+	grid-area: content-article;
+}
+
+/* ARTICLE */
+.article-header {
+	grid-area: article-header;
+}
+
+/*
+* MEDIA QUERIES
+* - layouts for variant screen real estates
+*/
+/* min 700 */
+@media (min-width: 700px) {
+	.wrapper {
+		grid-template-columns: 1fr 3fr;
+		grid-template-rows: 120px 60px calc(98vh - 240) 60px;
+		grid-template-areas:
+		"site-header site-header"
+		"site-nav site-nav"
+		"content-side content"
+		"site-links site-footer";
+		height: 98vh;
+	}
+}

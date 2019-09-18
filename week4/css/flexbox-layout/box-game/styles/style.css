@@ -1,0 +1,33 @@
+/*
+* style.css - basic flexbox for game
+* - base styles for flexbox game demo
+*/
+
+body {
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+/*
+* general styles
+*/
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  padding: 1%;
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #000;
+}

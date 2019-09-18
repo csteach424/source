@@ -1,0 +1,81 @@
+/*
+GRID layout
+*/
+
+/* grid container */
+.wrapper {
+  display: grid;
+  grid-template-rows: auto calc(99vh);
+  grid-template-columns: 200px auto;
+  column-gap: 5px;
+  row-gap: 10px;
+  grid-template-areas:
+    'side header'
+    'side content'
+    'side footer';
+}
+
+.page-sidebar {
+  grid-area: side;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.side-header {
+  border: 1px solid #779eab;
+  padding: 5px;
+  text-align: center;
+}
+
+.page-header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'progressbar contentmenu'
+    'update contentmenu';
+  column-gap: 5px;
+  row-gap: 5px;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.progress {
+  grid-area: progressbar;
+  border: 1px solid #779eab;
+  padding: 5px;
+}
+
+.progress-update {
+  grid-area: update;
+  border: 1px solid #779eab;
+  padding: 5px;
+}
+
+.content-menu {
+  grid-area: contentmenu;
+  border: 1px solid #779eab;
+  padding: 10px;
+}
+
+.content {
+  grid-area: content;
+  overflow: auto;
+}
+
+.content-header {
+  padding: 5px;
+}
+
+.content-article {
+  padding: 5px;
+}
+
+/*
+* page footer
+*/
+.footer {
+  grid-area: footer;
+  border: 1px solid #000;
+  padding: 5px;
+}

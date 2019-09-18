@@ -1,0 +1,78 @@
+/*
+* style.css 
+* - auto placement
+*/
+
+body {
+	font: 450 14px "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 0;
+	padding: 1vh;
+	color: #555;
+}
+
+/* GRID LAYOUT */
+.wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: 120px auto;
+	grid-template-areas:
+		"site-header"
+		"content";
+	height: 98vh;
+}
+
+.site-header {
+	grid-area: site-header;
+	padding-left: 25px;
+	border: 1px solid #aaa;
+}
+
+/* CONTENT */
+.content {
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+		"items";
+	grid-template-columns: 1fr;
+	align-self: center;
+	justify-self: center;
+	align-items: center;
+	padding: 50px;
+	border: 1px solid #aaa;
+}
+
+ul.items {
+	/* reset default indent for ul li */
+	margin: 0;
+	padding: 0;	
+}
+
+.items {
+	grid-area: items;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 150px);
+  grid-template-rows: 150px 150px 150px;
+}
+
+.items li {
+	margin: 0;
+	list-style-type: none;
+	border: 1px solid #333;
+	background-color: #333;
+	color: #fff;
+	padding: 10%;
+}
+
+.items li:nth-child(even) {
+	border: 1px solid #ccc;
+	background-color: #ccc;
+	color: #333;
+}
+
+.items li h5 {
+	text-align: center;
+	margin-top: 40%;
+}
