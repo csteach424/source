@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>markup - html - basic table with head, foot, body</title>
+    <!-- css styles -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <!-- basic table structure - add head, foot, body -->
+    <table summary="structured table data for travel destinations...">
+      <caption>Travel Destinations</caption>
+      <thead>
+        <tr>
+          <th id="place">Place</th>
+          <th id="country">Country</th>
+          <th id="sights">Sights</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="3">copyright - travel the world...</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td headers="place">Nice</td>
+          <td headers="country">France</td>
+          <td headers="sights">Cours Saleya</td>
+        </tr>
+        <tr>
+          <td headers="place">Cannes</td>
+          <td headers="country">France</td>
+          <td headers="sights">La Croisette</td>
+        </tr>
+        <tr>
+          <td headers="place">Antibes</td>
+          <td headers="country">France</td>
+          <td headers="sights">Picasso museum</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
