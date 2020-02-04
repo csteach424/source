@@ -1,0 +1,65 @@
+/*
+* style.css 
+* - auto placement
+*/
+
+body {
+	font: 450 14px "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 0;
+	padding: 1vh;
+	color: #555;
+}
+
+/* GRID LAYOUT */
+.wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: 120px auto;
+	grid-template-areas:
+		"site-header"
+		"content";
+	height: 98vh;
+}
+
+.site-header {
+	grid-area: site-header;
+	padding-left: 25px;
+}
+
+/* CONTENT */
+.content {
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+		"items";
+	grid-template-columns: 1fr;
+	align-self: center;
+	justify-self: center;
+	padding: 50px;
+	border: 1px solid #ccc;
+}
+
+ul.items {
+	/* reset default indent for ul li */
+	margin: 0;
+	padding: 0;	
+}
+
+.items {
+	grid-area: items;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	justify-self: center;
+}
+
+.items li {
+	margin: 0;
+	list-style-type: none;
+	border: 1px solid #378A61;
+	width: 200px;
+	height: 200px;
+}

@@ -1,0 +1,84 @@
+/*
+* style.css
+* - grid layout - responsive design layout using grid css
+*/
+
+body {
+
+}
+
+/* NAV menu */
+nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+/*
+* grid areas
+*/
+.wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		"site-header"
+		"site-nav"
+		"content-side"
+		"content"
+		"site-links"
+		"site-footer"
+}
+
+/* SITE */
+.site-header {
+	grid-area: site-header;
+}
+
+.site-nav {
+	grid-area: site-nav;
+}
+
+.site-links {
+	grid-area: site-links;
+}
+
+.site-footer {
+	grid-area: site-footer;
+}
+
+/* CONTENT */
+.content {
+	grid-area: content;
+}
+
+.content-side {
+	grid-area: content-side;
+}
+
+.content-article {
+	grid-area: content-article;
+}
+
+/* ARTICLE */
+.article-header {
+	grid-area: article-header;
+}
+
+/*
+* MEDIA QUERIES
+* - layouts for variant screen real estates
+*/
+/* min 700 */
+@media (min-width: 700px) {
+	.wrapper {
+		grid-template-columns: 1fr 3fr;
+		grid-template-areas:
+		"site-header site-header"
+		"site-nav site-nav"
+		"content-side content"
+		"site-links site-footer"
+	}
+}

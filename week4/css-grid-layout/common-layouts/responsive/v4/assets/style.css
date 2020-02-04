@@ -1,0 +1,201 @@
+/*
+* style.css
+* - grid layout - responsive design layout using grid css
+*/
+
+body {
+	/* font-family: Helvetica, Arial, sans-serif; */
+	font: 400 16px "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 0;
+	padding: 1vh;
+	color: #444;
+}
+
+a {
+	text-decoration: none;
+	color: #709492;
+}
+
+a:hover {
+	
+}
+
+h3, h5 {
+	color: #475E5D;
+}
+
+h6 {
+	color: #fff;
+}
+
+/* NAV menu */
+nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+nav ul li a {
+	padding: 10px;
+	color: #fff;
+}
+
+nav ul li a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+/* 
+* INPUT - various input field and usage
+*/
+/* general input  */
+.submit-button {
+	padding: 5px;
+	border: 1px solid #698A88;
+	background-color: #fff;
+	color: #709492;
+}
+
+.submit-button:hover {
+	background-color: #709492;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* SEARCH */
+input[name="search_query"] {
+	border: 1px solid #698A88;
+	width: 70%;
+	padding: 5px;
+	outline: none;
+	color: #444;
+}
+
+input[name="search_submit"] {
+	width: 20%;
+}
+
+/* USER - login, register */
+input[name="user_login"], input[name="user_register"] {
+	width: 45%;
+}
+
+/*
+* grid areas
+*/
+.wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: 120px 60px calc(98vh - 240) 60px;
+	grid-template-areas:
+		"site-banner"
+		"content"
+		"content-side"
+		"site-links"
+		"site-footer";
+	height: 98vh;
+}
+
+/* ORGANISATION */
+.banner {
+	grid-area: site-banner;
+	display: grid;
+	grid-template-columns: auto 300px;
+	grid-template-rows: 120px 60px;
+	grid-template-areas:
+		"site-header banner-extras"
+		"site-nav site-nav";
+}
+
+.banner-extras {
+	grid-area: banner-extras;
+	display: grid;
+	grid-template-areas:
+		"site-user"
+		"site-search";
+	padding: 5%;
+}
+
+/* SITE */
+.site-header {
+	grid-area: site-header;
+	padding-left: 25px;
+}
+
+.site-nav {
+	grid-area: site-nav;
+	border: 1px solid #ccc;
+	background-color: #709492;
+}
+
+.site-user {
+	grid-area: site-user;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.site-search {
+	grid-area: site-search;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.site-links {
+	grid-area: site-links;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #709492;
+}
+
+.site-footer {
+	grid-area: site-footer;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+/* CONTENT */
+.content {
+	overflow: auto;
+	grid-area: content;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.content-side {
+	grid-area: content-side;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #709492;
+}
+
+.content-article {
+	grid-area: content-article;
+}
+
+/* ARTICLE */
+.article-header {
+	grid-area: article-header;
+}
+
+/*
+* MEDIA QUERIES
+* - layouts for variant screen real estates
+*/
+/* min 900 */
+@media (min-width: 900px) {
+	.wrapper {
+		grid-template-areas:
+		"site-banner site-banner"
+		"content-side content"
+		"site-links site-footer";
+		grid-template-columns: 250px 3fr;
+		grid-template-rows: 180px auto 60px;
+		height: 98vh;
+	}
+}
