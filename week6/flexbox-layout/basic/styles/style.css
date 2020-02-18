@@ -1,0 +1,110 @@
+/*
+* style.css - basic flexbox
+* - base styles for flexbox demo
+*/
+
+body {
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+/*
+* general styles
+*/
+button {
+  margin: 1%;
+  padding: 1%;
+  line-height: 2;
+  font-size: 1em;
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #666;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #abc007;
+}
+
+input {
+  margin: 1%;
+  padding: 1%;
+  border: 1px solid #666;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  padding: 1%;
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #000;
+}
+
+#page-header {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+  align-self: flex-start;
+  align-items: center;
+}
+
+#fTabs {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.fTab {
+  margin: 1%;
+  padding: 1%;
+  border: 1px solid #000;
+  flex: 1 20%;
+}
+
+div.fTab:nth-child(odd) {
+  flex: 1;
+}
+
+div.fTab:nth-child(even) {
+  flex: 2;
+  align-self: flex-end;
+}
+
+div.fTab:first-child {
+  order: 1;
+}
+
+div.fTab:last-child {
+  order: -1;
+}
+
+/*
+* search
+*/
+#search {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  align-self: flex-start;
+}
+
+#searchBox {
+  flex: 4;
+}
+
+#searchBtn {
+  flex: 1;
+}
