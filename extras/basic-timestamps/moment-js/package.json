@@ -1,0 +1,21 @@
+{
+  "name": "basic-timestamps-moment",
+  "version": "0.0.1",
+  "description": "basic test of timestamps with moment.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "moment.js",
+    "timestamps",
+    "js",
+    "node.js"
+  ],
+  "author": "spire.signpost",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "moment": "^2.20.1",
+    "nodemon": "^1.14.10"
+  }
+}
