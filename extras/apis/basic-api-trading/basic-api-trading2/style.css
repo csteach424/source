@@ -1,0 +1,43 @@
+/*
+*	style.css
+*/
+
+body {
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; 
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 1vh;
+	color: #555;
+}
+
+/* 
+* INPUT - various input field and usage
+*/
+
+/* general submit button */
+.submit-button {
+	padding: 5px;
+	border: 1px solid #137fa6;
+	background-color: #137fa6;
+	outline: none;
+	color: #fff;
+}
+
+/* submit button hover */
+.submit-button:hover {
+	background-color: #b97454;
+	border: 1px solid #b97454;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* stock query */
+input[name="api_stock"] {
+	border: 1px solid #137fa6;
+	width: 180px;
+	padding: 5px;
+	outline: none;
+	color: #444;
+}
