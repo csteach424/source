@@ -1,0 +1,83 @@
+/*
+* style.css
+* basic styles for state test app...
+*/
+
+/*
+* GLOBAL - parent styles for app
+*/
+
+body {
+  font-size: 16px;
+}
+
+/* HEADINGS */
+h3 {
+  font-size: 1.5em;
+}
+
+/* BANNER - header */
+#banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  margin: 1% 1%;
+  border: 1px solid #000;
+  z-index: 10;
+}
+
+#banner h3 {
+  margin-left: 1%;
+}
+
+/* app */
+#content {
+  margin-top: 15%;
+  padding: 2%;
+  border: 1px solid #000;
+}
+
+/* powerbar */
+#powerbar {
+  width: 80%;
+  height: 50px;
+  margin: 10%;
+  background-color: #ff8a22;
+  border: 1px solid #000;
+}
+
+/* input */
+#input, #output {
+  width: 80%;
+  margin: 5% 10%;
+}
+
+/* button */
+button {
+  margin: 1% 1% 1% 0;
+  padding: 1%;
+  border: 1px solid #000;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+#blueBtn {
+  background-color: #3963de;
+  color: #fff;
+}
+
+#greenBtn {
+  background-color: #46bb32;
+  color: #fff;
+}
+
+#redBtn {
+  background-color: #de3956;
+  color: #fff;
+}
